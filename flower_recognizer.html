@@ -34,12 +34,15 @@ layout: page
     .button-1:focus {
       background-color: #F082AC;
     }
+    input[type="file"] {
+    display: none;
+    }
 </style>
 
 <div style="text-align: center;">
 <h2> Upload a flower image: </h2>
 <button class="button-1"> 
-    <input id="photo" type="file" hidden>
+    <input id="photo" type="file">
     Classify Image
 </button>
 
