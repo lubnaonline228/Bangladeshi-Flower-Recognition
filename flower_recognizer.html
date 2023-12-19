@@ -2,9 +2,47 @@
 title: Flower Recognizer
 layout: page
 ---
+<style>
+    .button-1 {
+      background-color: #EA4C89;
+      border-radius: 8px;
+      border-style: none;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      
+      font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      height: 40px;
+      line-height: 20px;
+      list-style: none;
+      margin: 0;
+      outline: none;
+      padding: 10px 20px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      transition: color 100ms;
+      vertical-align: baseline;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .button-1:hover,
+    .button-1:focus {
+      background-color: #F082AC;
+    }
+</style>
+
+<div style="text-align: center;">
 <h2> Upload a flower image: </h2>
-<input id="photo" type="file">
+
+<input id="photo" type="file" hidden>
+<button id="classify-image" class="button-1">Classify Picture</button>
 <div id="results"></div>
+</div>
 
 <script>
     async function loaded(reader) {   
