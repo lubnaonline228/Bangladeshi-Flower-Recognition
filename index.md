@@ -2,6 +2,7 @@
 title: Home
 layout: page
 ---
+<body style="background-color: #bed6c5">
 <div style="text-align: center;">
 <p style="font-size:25px; font-weight: bold;"> An Image Recognition Model </p>
 
@@ -21,18 +22,16 @@ layout: page
 <br><br>
 
 <p style="font-size:18px"> This application can classify 10 Different Types of Flowers, like: <br>
-<ul>
-<li> Beli </li>
-<li> Gada </li>
-<li> Joba </li>
-<li> Kamini </li>
-<li> Kodom </li>
-<li> Palash </li>
-<li> Rose </li>
-<li> Sheuli </li>
-<li> Sunflower </li>
-<li> Water Lily </li>
-</ul>
+Beli <br>
+Gada <br>
+Joba <br>
+Kamini <br>
+Kodom <br>
+Palash <br>
+Rose <br>
+Sheuli <br>
+Sunflower <br>
+Water Lily <br>
 </p>
 
 </div>
