@@ -2,7 +2,7 @@
 title: Home
 layout: page
 ---
-
+<div style="text-align: center;">
 # An Image Recognition Model
 
 <br><br>
@@ -20,7 +20,7 @@ layout: page
 <img src="beli.jpg" height="100" width="100"> 
 <br><br>
 
-This application can classify 10 Different Types of Flowers, like: <br>
+<p style="font-size:16"> This application can classify 10 Different Types of Flowers, like: <br>
 1. Beli
 2. Gada
 3. Joba
@@ -31,5 +31,6 @@ This application can classify 10 Different Types of Flowers, like: <br>
 8. Sheuli
 9. Sunflower
 10. Water Lily
+</p>
 
-
+</div>
