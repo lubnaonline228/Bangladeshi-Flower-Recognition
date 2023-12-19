@@ -2,9 +2,44 @@
 title: Home
 layout: page
 ---
+
+<style>
+.button-1 {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}
+</style>
 <body style="background-color: #bed6c5">
 <div style="text-align: center;">
 <p style="font-size:25px; font-weight: bold;"> An Image Recognition Model </p>
+<p style="text-align: right"> <button class="button-1"> Start </button></p>
 
 <br><br>
 
@@ -21,7 +56,7 @@ layout: page
 <img src="beli.jpg" height="150" width="150"> 
 <br><br>
 
-<p style="font-size:18px"> This application can classify 10 Different Types of Flowers, like: <br>
+<p style="font-size:18px"> This application can classify 10 Different Types of Flowers, like: <br><br>
 Beli <br>
 Gada <br>
 Joba <br>
@@ -35,3 +70,9 @@ Water Lily <br>
 </p>
 
 </div>
+</body>
+
+
+<!-- HTML !-->
+<button class="button-1" role="button">Button 1</button>
+
