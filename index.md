@@ -20,7 +20,7 @@ layout: page
   list-style: none;
   margin: 0;
   outline: none;
-  padding: 10px 16px;
+  padding: 10px 20px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -37,7 +37,7 @@ layout: page
 }
 </style>
 <body style="background-color: #bed6c5">
-<div style="text-align: center; width: 800px;">
+<div style="text-align: center;">
 <p style="font-size:25px; font-weight: bold;"> An Image Recognition Model </p>
 
 <a style="text-align:right" href="https://lubnaonline228.github.io/flower-recognizer/flower_recognizer.html"><button class="button-1"> Start </button></a>
