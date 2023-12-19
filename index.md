@@ -4,7 +4,7 @@ layout: page
 ---
 
 # An Image Recognition Model
-This application can classify 10 Different Types of Flowers, like: </br>
+This application can classify 10 Different Types of Flowers, like: <br>
 1. Beli
 2. Gada
 3. Joba
