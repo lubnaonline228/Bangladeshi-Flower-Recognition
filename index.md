@@ -4,6 +4,22 @@ layout: page
 ---
 
 # An Image Recognition Model
+
+<br><br>
+
+<img src="gada.jpg" height="100" width="100">
+<img src="joba.jpg" height="100" width="100">
+<img src="kamini.jpg" height="100" width="100"> 
+<img src="kodom.jpg" height="100" width="100">
+<img src="rose.jpg" height="100" width="100"> 
+<br>
+<img src="sunflower.jpg" height="100" width="100">
+<img src="water lily.jpg" height="100" width="100">
+<img src="palash.jpg" height="100" width="100"> 
+<img src="sheuli.jpg" height="100" width="100">
+<img src="beli.jpg" height="100" width="100"> 
+<br><br>
+
 This application can classify 10 Different Types of Flowers, like: <br>
 1. Beli
 2. Gada
@@ -16,14 +32,4 @@ This application can classify 10 Different Types of Flowers, like: <br>
 9. Sunflower
 10. Water Lily
 
-<img src="gada.jpg" height="100">
-<img src="joba.jpg" height="100">
-<img src="kamini.jpg" height="100"> 
-<img src="kodom.jpg" height="100">
-<img src="rose.jpg" height="100"> 
-<br>
-<img src="sunflower.jpg" height="100">
-<img src="water lily.jpg" height="100">
-<img src="palash.jpg" height="100"> 
-<img src="sheuli.jpg" height="100">
-<img src="beli.jpg" height="100"> 
+
