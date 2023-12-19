@@ -37,11 +37,10 @@ layout: page
 }
 </style>
 <body style="background-color: #bed6c5">
-<div style="text-align: center;">
+<div style="text-align: center; width: 800px;">
 <p style="font-size:25px; font-weight: bold;"> An Image Recognition Model </p>
-<br>
 
-<a href="https://lubnaonline228.github.io/flower-recognizer/flower_recognizer.html"><button class="button-1"> Start </button></a>
+<a style="text-align:right" href="https://lubnaonline228.github.io/flower-recognizer/flower_recognizer.html"><button class="button-1"> Start </button></a>
 <br>
 
 <img src="gada.jpg" height="150" width="150">
