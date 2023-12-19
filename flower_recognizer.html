@@ -5,6 +5,7 @@ layout: page
 <h2> Upload a flower image: </h2>
 <input id="photo" type="file">
 <div id="results"></div>
+<!--
 <script>
     async function loaded(reader) {   
     const response = await fetch("https://nahid22-flower-recognition.hf.space/run/predict", {
@@ -21,3 +22,10 @@ layout: page
     }
     photo.addEventListener('input', read);
 </script>
+-->
+<script
+	type="module"
+	src="https://gradio.s3-us-west-2.amazonaws.com/3.50.0/gradio.js"
+></script>
+
+<gradio-app src="https://nahid22-flower-recognition.hf.space"></gradio-app>
