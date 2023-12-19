@@ -11,7 +11,7 @@ layout: page
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
-  display: inline-block;
+  
   font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -39,9 +39,10 @@ layout: page
 <body style="background-color: #bed6c5">
 <div style="text-align: center;">
 <p style="font-size:25px; font-weight: bold;"> An Image Recognition Model </p>
-<p style="text-align: right"> <button class="button-1"> Start </button></p>
+<br>
 
-<br><br>
+<a href="https://lubnaonline228.github.io/flower-recognizer/flower_recognizer.html"><button class="button-1"> Start </button></a>
+<br>
 
 <img src="gada.jpg" height="150" width="150">
 <img src="joba.jpg" height="150" width="150">
