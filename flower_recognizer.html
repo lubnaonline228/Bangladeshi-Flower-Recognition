@@ -105,7 +105,7 @@ layout: page
       else if(label=='Beli flower') {
         description="The Beli flower is commonly known as the Arabian Jasmin. These flowers bloom all throughout the year and are produced in clusters of 3 to 12 together at the ends of branches. They are strongly scented, with a white corolla. Beli flowers are often used to make ornaments like necklaces and bracelets, or hair ornaments, especially worn by women and girls during weddings.";
       }
-      results.innerHTML = `<br/> <img src = "${reader.result}" style="width: 300px;"> <h4 style="margin-top:20px; font-weight: bold;">${label} <i> (${confidence}% confidence) </i> </h4>"
+      results.innerHTML = `<br/> <img src = "${reader.result}" style="width: 300px;"> <h4 style="margin-top:20px; font-weight: bold;">${label} <i> (${confidence}% confident) </i> </h4>
       <div class='container w-50'><p class="text-justify">${description}</p></div>
 
       `;
