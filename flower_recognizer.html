@@ -71,7 +71,9 @@ layout: page
           body: JSON.stringify({data: [reader.result]})});
       const json = await response.json();
       const label = json['data'][0]['label'];
-      const confidence = Math.round((json['data'][0]['confidences'][0]['confidence'] + Number.EPSILON) * 100) / 100;
+      //const confidence = Math.round((json['data'][0]['confidences'][0]['confidence'] + Number.EPSILON) * 100) / 100;
+      const conf = json['data'][0]['confidences'][0]['confidence'] * 100;
+      const confidence = conf.toFixed(2);
       description="";
       if(label=='Kodom flower') {
         description="The scientific name for the Kodom flower is Neolamarckia cadamba, with English common names burflower-tree, laran, and Leichhardt pine. This flower blooms during the monsoon season, and it has scented orange flowers in dense globe-shaped clusters.";
