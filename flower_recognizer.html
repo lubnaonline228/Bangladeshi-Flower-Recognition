@@ -73,8 +73,34 @@ layout: page
       const label = json['data'][0]['label'];
       description="";
       if(label=='Kodom flower') {
-        description="The scientific name is Neolamarckia cadamba, with English common names burflower-tree, laran, and Leichhardt pine. This flower blooms during the monsoon season, and it has scented orange flowers in dense globe-shaped clusters.";
+        description="The scientific name for the Kodom flower is Neolamarckia cadamba, with English common names burflower-tree, laran, and Leichhardt pine. This flower blooms during the monsoon season, and it has scented orange flowers in dense globe-shaped clusters.";
       }
+      else if(label=='Rose flower') {
+        description="The rose's botanical name is Rosa rubiginosa. There are roughly 360 species of roses. In Bangladesh some local varieties have been raised, such as 'Fatema Sattar', 'Shibly', 'Rahela Hamid', 'Piyaree', 'Bhasani', Sher-e-Bangla', '1952', and 'Jayanti.";
+      }
+      else if(label=='Gada flower') {
+        description="The English name for the Gada flower is Marigold. Its dense heads of orange or yellow flowers are popularly planted in garden borders. It blooms in the winter season in Bangladesh, the martyrs are honored with this flower at Shaheed Minar on 21st February every year.";
+      }
+      else if(label=='Joba flower') {
+        description="The English name for the Joba flower is Hibiscus. Other common names of this flower are Chinese Rose, and Rose mallow. These flowers are known for their large and trumpet-like shape, have five or more petals, and come in a range of colors, including white, pink, orange, red, yellow, purple.";
+      }
+      else if(label=='Kamini flower') {
+        description="This flower is also know as Murraya paniculata, madhu kamini, and sometimes also goes by the name Orange Jasmin. Kamini flowers have an aromatic citrus like fragrance. Native to India, It is a large, multi-trunked shrub, but can grow to become a small tree. It can be pruned and also grown as garden hedge.";
+      }
+      else if(label=='Sunflower flower') {
+        description="In Bangla, this flower is also known as 'Surjamukhi'. Sunflowers have a large flower head, usually with a large, almost black central part which is made up of thousands of tiny florets that later become seeds set in a spiral pattern. Its botanical name is Helianthus. The Greek word 'helios' means sun and 'anthos' means flower. It is aptly named after the sun which it resembles";
+      }
+      else if(label=='Water Lily') {
+        description="The national flower of Bangladesh is the white water lily (Nymphaea nouchali). In Bangladesh, it's called “Shada Shapla” and is very common in waterways. Water lilies are also eaten and used in traditional medicine by Bangladeshis. A stylized white water lily appears on several of Bangladesh's public services.";
+      }
+      else if(label=='Palash flower') {
+        description="Polash or Flame of the Forest (Butea monosperma, family : Fabaceae) is a medium-sized (12-14 m) flowering tree reaching 9-15 m height. Trunk is crooked, young shoot downy tomentose. Sanskrit name of the plant is Kingshuk.";
+      }
+      else if(label=='Sheuli flower') {
+        description="Night jasmine or shiuli ful is a highly perfumed flower, small in size. The tree is sometimes called the 'tree of sorrow',because the flowers lose their brightness during daytime. Its scientific name is Nyctanthes arbor-tristis.";
+      }
+
+
       results.innerHTML = `<br/> <img src = "${reader.result}" style="width: 300px;"> <h4 style="margin-top:20px; font-weight: bold;">${label}</h4>
       <div class='container w-50'><p class="text-justify">${description}</p></div>
 
