@@ -1,8 +1,21 @@
----
+<!-- ---
 title: Flower Recognizer
 layout: page
----
-<style>
+--- -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  <style>
     .button-1 {
       background-color: #EA4C89;
       border-radius: 8px;
@@ -35,36 +48,63 @@ layout: page
       background-color: #F082AC;
     }
 </style>
+</head>
+
 
 <body style="background-color: #bed6c5">
-<div style="text-align: center;">
-<h2> Upload a flower image: </h2>
-<input class="button-1" id="photo" type="file">
-<div id="results"></div>
-</div>
+  <div style="text-align: center;">
+    <div class="container mt-5 mb-3">
+      <h2> Upload a flower image: </h2>
+    </div>
+  <!-- <input class="button-1" id="photo" type="file"> -->
+  <div class="container mb-3 w-50">
+    <input class="form-control" id="photo" type="file" id="formFileMultiple" multiple>
+  </div>
+  <div id="results"></div>
+  
+  </div>
+  
+  <script>
+      async function loaded(reader) {   
+      const response = await fetch("https://nahid22-flower-recognition.hf.space/run/predict", {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({data: [reader.result]})});
+      const json = await response.json();
+      const label = json['data'][0]['label'];
+      results.innerHTML = `<br/> <img src = "${reader.result}" style="width: 300px;"> <h4 style="margin-top:20px; font-weight: bold;">${label}</h4>
+      <div class='container w-50'><p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, enim. Tempora aspernatur itaque sed nam expedita voluptatibus omnis iste laudantium aperiam numquam voluptatem, sequi quibusdam eos eligendi alias dicta voluptas.</p></div>
 
-<script>
-    async function loaded(reader) {   
-    const response = await fetch("https://nahid22-flower-recognition.hf.space/run/predict", {
-        method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({data: [reader.result]})});
-    const json = await response.json();
-    const label = json['data'][0]['label'];
-    results.innerHTML = `<br/> <img src = "${reader.result}" style="width: 300px;"> <p style="font-size: 18px; font-weight: bold;">${label}</p>`;
-    }
-    function read() {
-        const reader = new FileReader();
-        reader.addEventListener('load', () => loaded(reader))
-        reader.readAsDataURL(photo.files[0]);
-    }
-    photo.addEventListener('input', read);
-</script>
-<!--
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/3.50.0/gradio.js"
-></script>
+      `;
+      }
+      function read() {
+          const reader = new FileReader();
+          reader.addEventListener('load', () => loaded(reader))
+          reader.readAsDataURL(photo.files[0]);
+      }
+      photo.addEventListener('input', read);
+  </script>
+  <!--
+  <script
+    type="module"
+    src="https://gradio.s3-us-west-2.amazonaws.com/3.50.0/gradio.js"
+  ></script>
+  
+  <gradio-app src="https://nahid22-flower-recognition.hf.space"></gradio-app>
+  -->
 
-<gradio-app src="https://nahid22-flower-recognition.hf.space"></gradio-app>
--->
-</body>
+  <!-- for bootstrap -->
+  <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+
+
