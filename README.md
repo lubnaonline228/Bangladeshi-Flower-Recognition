@@ -15,3 +15,6 @@ The goal of this project is to create and train a model that can recognize 10 di
 8. Sheuli
 9. Sunflower
 10. Water Lily
+
+## Data Scraping
+Leveraging fastAI's DuckDuckGo search functionality, I implemented a loop to systematically collect images for each flower category, organizing them into respective folders. The entire data collection procedure is documented in the "data_collection" notebook for reference.
